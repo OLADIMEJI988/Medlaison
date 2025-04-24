@@ -1,0 +1,32 @@
+.heroBg{
+    background-image: url('../assets/heroBg.png');
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+}
+
+.flexBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hoverEffectBtn:hover{
+    transform: scale(0.93) !important;
+    z-index: 2;
+}
+
+.hoverEffectImg:hover{
+    transform: scale(1.1) !important;
+    z-index: 2;
+}
+
+.hoverEffectImgSlide:hover{
+    transform: scale(1.1) !important;
+    z-index: 2;
+    margin-left: 10px;
+}
+
+.transition {
+    transition: 1s;
+}

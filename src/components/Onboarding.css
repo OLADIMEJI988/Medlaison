@@ -1,0 +1,16 @@
+.tab-button{
+    color: black;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    /* width: 90px; */
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 9999px;
+    background-color: rgb(1 37 164 / var(--tw-bg-opacity, 1));
+    color: white;
+}
+

@@ -1,0 +1,7 @@
+.hoverEffectBtn:hover{
+    transform: scale(0.97);
+}
+
+.transition {
+    transition: 1s;
+}

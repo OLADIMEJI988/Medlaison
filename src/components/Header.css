@@ -1,0 +1,16 @@
+/* .logoText{
+    font-family: 'Satoshi';
+} */
+
+.hoverEffect:hover{
+    color: #1324BB;
+}
+
+.hoverEffectBtn:hover{
+    transform: scale(0.93) !important;
+    z-index: 2;
+}
+
+.transition {
+    transition: 1s;
+}
