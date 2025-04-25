@@ -7,6 +7,7 @@ import Pricing from '../components/Pricing'
 import Reviews from '../components/Reviews'
 import Support from '../components/Support'
 import MottoFrame from '../components/MottoFrame'
+import Footer from '../components/Footer'
 
 export default function LandingPage() {
   return (
@@ -19,6 +20,7 @@ export default function LandingPage() {
     <Reviews />
     <Support />
     <MottoFrame />
+    <Footer />
     </>
   )
 }

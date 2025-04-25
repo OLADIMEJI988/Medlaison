@@ -11,7 +11,7 @@ export default function Support() {
             <p className='text-[#171717] text-[25px] mt-[2px]'>Frequently asked questions</p>
        </div>
 
-       <div className='mb-20'>
+       <div className='mb-20 mt-4'>
             <Questions 
                 question="What is a universal health record, and how does it benefit me?"
                 arrowDown={arrowDown}
@@ -36,14 +36,14 @@ export default function Support() {
             <Questions 
                 question="What are personalized health insights, and how can they help me?"
                 arrowDown={arrowDown}
-                answer="hello"
+                answer="Personalized health insights are tailored recommendations based on your unique health data, such as medical history, lifestyle, and vitals. They help you stay ahead with preventive care, make informed decisions, track your health progress, and have more effective conversations with doctors. On Medlaison, these insights are automatically generated and easy to understand, turning your data into actionable steps for better health."
                 arrowUp={arrowUp}
             />
 
             <Questions 
                 question="Is my health information secure on Medlaison?"
                 arrowDown={arrowDown}
-                answer="hello"
+                answer="Yes, your health information on Medlaison is designed to be secure. While specific details about Medlaison's security measures aren't publicly available, reputable telehealth platforms typically implement robust data protection protocols. These often include encryption, secure servers, and compliance with relevant data privacy regulations to ensure that your personal health information remains confidential and protected."
                 arrowUp={arrowUp}
             />
        </div>
