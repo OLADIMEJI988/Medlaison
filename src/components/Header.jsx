@@ -8,7 +8,7 @@ export default function Header() {
        <div className='border border-[#9DA7FF] rounded-md w-[90%] mr-auto ml-auto pl-4 pr-[26px] py-[3px] flex items-center justify-between'>
          <div className='flex items-center'>
             <img className='h-11' src={logo} alt="" />
-            <p className='text-[#1324BB] -ml-[6px] logoText'><span className='font-semibold'>Med</span>laison</p>
+            <p className='text-[#1324BB] -ml-[6px]'><span className='font-semibold'>Med</span>laison</p>
          </div>
          <div className='gap-8 font-semibold text-[13px] flex text-[#171717]'>
             <p className='cursor-pointer hoverEffect'>Services</p>

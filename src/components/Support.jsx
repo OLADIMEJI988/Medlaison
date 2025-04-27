@@ -10,7 +10,7 @@ export default function Support() {
             <p className='text-[#1324BB] text-sm font-bold'>Support</p>
             <p className='text-[#171717] text-[25px] mt-[2px]'>Frequently asked questions</p>
        </div>
-
+       
        <div className='mb-20 mt-4'>
             <Questions 
                 question="What is a universal health record, and how does it benefit me?"

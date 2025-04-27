@@ -1,3 +1,12 @@
 .background{
     background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 10%, #D3D8FF 100%);
 }
+
+.hoverEffectBtn:hover{
+    transform: scale(0.9) !important;
+    z-index: 2;
+}
+
+.transition {
+    transition: 1s;
+}
