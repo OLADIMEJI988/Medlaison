@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
-      <LandingPage />
+      <div className='overflow-hidden w-full h-full'>
+        <LandingPage />
+      </div>
     </>
   )
 }

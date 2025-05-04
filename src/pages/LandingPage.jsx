@@ -9,6 +9,7 @@ import Support from '../components/Support'
 import MottoFrame from '../components/MottoFrame'
 import Footer from '../components/Footer'
 
+
 export default function LandingPage() {
   return (
     <>
