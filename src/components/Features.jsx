@@ -9,6 +9,8 @@ import videoConsultation from "../assets/videoConsultation.png";
 import practitionerGrp from "../assets/practitionerGrp.png";
 import healthInsights from "../assets/healthInsights.png";
 
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Features() {
@@ -18,8 +20,6 @@ export default function Features() {
     const elements = containerRef.current.querySelectorAll('.animate-in');
   
     elements.forEach((el, i) => {
-      const isSlower = i === 2 || i === 5; // These correspond to 2nd and 4th ContainedFeature divs
-  
       gsap.fromTo(
         el,
         {
@@ -31,25 +31,28 @@ export default function Features() {
           opacity: 1,
           y: 0,
           scale: 1,
-          duration: isSlower ? 1.4 : 0.8, // Slower animation for 2nd & 4th
-          ease: 'power3.out',
+          duration: 1.2,
+          ease: 'back.out',
           scrollTrigger: {
             trigger: el,
-            start: 'top 85%',
-            toggleActions: 'play none none none'
+            start: 'top 100%',
+            end: 'top 50%',     
+            toggleActions: 'play none none reverse',
           },
           delay: i * 0.1
         }
       );
     });
   }, []);
+  
+  
 
   
   return (
     <div ref={containerRef}>
-      <div className='mt-16 mb-5'>
-        <p className='text-[#1324BB] text-sm font-bold animate-in'>Features</p>
-        <p className='text-[#171717] text-[22px] font-semibold animate-in'>
+      <div className='mt-16 mb-5 animate-in'>
+        <p className='text-[#1324BB] text-sm font-bold'>Features</p>
+        <p className='text-[#171717] text-[22px] font-semibold'>
           Redefining the medical sectors with bespoke features
         </p>
       </div>

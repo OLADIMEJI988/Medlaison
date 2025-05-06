@@ -2,7 +2,7 @@
     background-image: url('../assets/heroBg.png');
     background-size: cover;
     background-position: center;
-    height: 570px;
+    height: 585px;
 }
 
 .flexBlock{
@@ -22,9 +22,10 @@
 }
 
 .hoverEffectImgSlide:hover{
-    transform: scale(1.1) !important;
+    transform: scale(1) !important;
     z-index: 2;
     margin-left: 10px;
+    margin-top: 25px;
 }
 
 .transition {
