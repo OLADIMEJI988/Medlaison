@@ -32,7 +32,7 @@ export default function HealthCompanies() {
           y: 0,
           scale: 1,
           duration: 1.3,
-          ease: 'back.out',
+          ease: 'power3.inout',
           scrollTrigger: {
             trigger: el,
             start: '-30% 100%',

@@ -10,7 +10,6 @@ import practitionerGrp from "../assets/practitionerGrp.png";
 import healthInsights from "../assets/healthInsights.png";
 
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Features() {
@@ -32,7 +31,7 @@ export default function Features() {
           y: 0,
           scale: 1,
           duration: 1.2,
-          ease: 'back.out',
+          ease: 'power3.inout',
           scrollTrigger: {
             trigger: el,
             start: 'top 100%',
