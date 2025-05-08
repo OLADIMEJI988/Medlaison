@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import PricingCategory from './PricingCategory'
+import PricingCategory from './PricingCategory';
 import capsule from "../assets/capsule.png";
 import blueStethoscope from "../assets/blue-stethoscope.png";
 import syringe from "../assets/syringe.png";
@@ -37,7 +37,6 @@ const premiumBenefits = [
     { icon: blueStethoscope, label: "Medication Reminders" }, 
 ];
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Pricing() {
@@ -46,7 +45,7 @@ export default function Pricing() {
 
   useEffect(() => {
     const elements = containerRef.current.querySelectorAll('.animate-in');
-  
+
     elements.forEach((el, i) => {
       gsap.fromTo(
         el,
@@ -63,16 +62,16 @@ export default function Pricing() {
           ease: 'power3.inout',
           scrollTrigger: {
             trigger: el,
-            start: 'top 100%',
+            start: 'top 100%', 
             end: 'top 50%',     
-            toggleActions: 'play none none reverse',
+            toggleActions: 'play none none reverse', 
+            once: false,        
           },
-          delay: i * 0.1
+          delay: i * 0.3  
         }
       );
     });
   }, []);
-
 
   return (
     <>
@@ -82,14 +81,18 @@ export default function Pricing() {
           <p className='text-[#171717] text-[25px] mt-[2px] animate-in'>Pricing made for healthy tomorrow</p>
         </div>
 
-        <div className='flex justify-center mt-6 gap-8 animate-in'>
-          <PricingCategory benefits={basicBenefits} img={capsule} tier="Basic" price="#600" />
-          <PricingCategory benefits={goldBenefits} img={blueStethoscope} tier="Gold" price="#1000" />
-          <PricingCategory benefits={premiumBenefits} img={syringe} tier="Premium" price="#2000" />
+        <div className='flex justify-center mt-6 gap-8'>
+          <div className="pricing-card animate-in">
+            <PricingCategory benefits={basicBenefits} img={capsule} tier="Basic" price="600" />
+          </div>
+          <div className="pricing-card animate-in">
+            <PricingCategory benefits={goldBenefits} img={blueStethoscope} tier="Gold" price="1000" />
+          </div>
+          <div className="pricing-card animate-in">
+            <PricingCategory benefits={premiumBenefits} img={syringe} tier="Premium" price="2000" />
+          </div>
         </div>
       </div>
-       
     </>
-
   )
 }
