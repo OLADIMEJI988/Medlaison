@@ -9,13 +9,12 @@ export default function PricingCategory({benefits, tier, price, img}) {
   const benefitsRef = useRef([]);  
 
   useEffect(() => {
-    // scrollTrigger plugin
+
     gsap.registerPlugin(ScrollTrigger);
 
-    // Kill ongoing animations when the component re-renders
     gsap.killTweensOf(benefitsRef.current);
 
-    // Trigger price animation only when the price element is in view
+
     if (priceRef.current) {
       gsap.fromTo(
         priceRef.current,
